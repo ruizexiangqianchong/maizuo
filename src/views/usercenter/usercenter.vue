@@ -1,7 +1,5 @@
 <template>
-	<div>
-		<h2>hot</h2>
-	</div>
+	<div>这是我的页面</div>
 </template>
 
 <script>
