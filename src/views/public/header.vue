@@ -9,6 +9,11 @@
 	}
 </script>
 
-<style>
-
+<style scoped>
+.header{
+	width: 100%;
+	height: 0.5rem;
+	background: red;
+	
+	}
 </style>
