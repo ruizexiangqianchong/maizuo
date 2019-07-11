@@ -1,23 +1,26 @@
 <template>
-	<div id="app">
-		<transition name="fade" mode="out-in"><router-view /></transition>
-	</div>
+  <div id="app">
+	  <Header>头部</Header>
+   <router-view/>
+   <Index></Index>
+  <!-- <Footer>底部</Footer> -->
+   
+  </div>
 </template>
 
 <script>
-export default {
-	components: {}
-};
-</script>
-<style>
-	#app{
-		height: auto
+	import Footer from './views/public/footer.vue'
+	import Header from './views/public/header.vue'
+	import Index from './views/default/index.vue'
+	export default{
+		components:{
+			Footer,Header,Index
+		}
 	}
-.fade-enter-active,
-.fade-leave-active {
-	transition: opacity 0.3s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-	opacity: 0;
+
+</script>
+<style lang="scss">
+#app{
+	
 }
 </style>

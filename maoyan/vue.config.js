@@ -1,13 +1,13 @@
 module.exports ={
     devServer:{
         proxy:{
-            '/dl':{
-                "target":"https://m.maizuo.com",
+            "/wy":{
+                "target":"http://10.9.26.199:3000",
                 "changeOrigin":true,
                 "pathRewrite":{
-                    "^/dl":""
+                    "^/wy":"/"
                 }
             }
         }
-    }
+    },
 }
