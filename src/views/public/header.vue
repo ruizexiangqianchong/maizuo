@@ -1,6 +1,7 @@
 <template>
 	<div class="header">
 		这是头部
+		<span class="iconfont icon-liebiao"></span>
 	</div>
 </template>
 
