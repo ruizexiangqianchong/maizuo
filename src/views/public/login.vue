@@ -38,7 +38,6 @@ export default {
 					sessionStorage.setItem("user",JSON.stringify(res))
 					this.$emit("child","u")
 					this.$router.push("/")
-					
 				})
 				.catch(err => {
 					console.log(err);

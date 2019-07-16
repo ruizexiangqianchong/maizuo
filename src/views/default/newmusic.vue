@@ -13,8 +13,7 @@ export default {
 	},
 	created() {
 		this.$axios.get('/wy/personalized/newsong').then(res => {
-			let lulist = res.data.result.sort();
-			console.log(res);
+			//let lulist = res.data.result.sort();
 		});
 	}
 };

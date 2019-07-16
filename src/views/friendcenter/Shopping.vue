@@ -1,6 +1,6 @@
 <template>
 	<div class="index-list">
-这是朋友页面
+这是特惠页面
 	</div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
 	<nav class="index-nav">
 		<ul>
-			<li><router-link to="/"><span class="iconfont icon-rili"></span></router-link>每日推荐</li>
+			<li><router-link to="/daymusiclist"><span class="iconfont icon-rili"></span></router-link>每日推荐</li>
 			<li><router-link to="/"><span class="iconfont icon-gavin-copy"></span></router-link>歌单</li>
 			<li><router-link to="/"><span class="iconfont icon-paixingbang"></span></router-link>排行榜</li>
 			<li><router-link to="/"><span class="iconfont icon-diantai"></span></router-link>电台</li>

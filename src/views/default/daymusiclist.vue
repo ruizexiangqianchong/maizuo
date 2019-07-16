@@ -1,14 +1,14 @@
 <template>
 	<div class="tjmusiclist">
 		<div class="tjmusiclist-title">
-			<h3>推荐歌单</h3>
-			<span><router-link to="/daymusiclist">歌单广场</router-link></span>
+			<h3>全部歌单</h3>
+			<!-- <span><router-link to="/">歌单广场</router-link></span> -->
 		</div>
 		<div class="tjmusiclist-center">
 			<ul>
 				<li v-for="item in list">
 					<!-- 注意在div上预留了歌单id，可以直接获取 -->
-					<div :id="item.id" @click.stop="musiclist(item.id)">
+					<div :id="item.id" @click="musiclist(item.id)">
 						<img :src="item.picUrl" alt="" />
 						<p>
 							<i class="iconfont icon-kongxinsanjiao-first"></i>
@@ -35,10 +35,8 @@ export default {
 	},
 	created() {
 		this.$axios.get('/wy/personalized').then(res => {
-			for (let i = 0; i < 12; i++) {
-				this.list.push(res.data.result[i]);
-			}
-			//this.list=res.data.result
+				this.list=res.data.result
+				console.log(this.list)
 		})
 	},
 	methods: {
